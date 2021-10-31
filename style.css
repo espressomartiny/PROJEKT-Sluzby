@@ -1,0 +1,180 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    margin-top: 60px;
+    font-size: 16px;
+    color: #8B8B8B;
+    background-color: #FAFAFA;
+    text-align:center;
+    position: relative;
+}
+
+h1 {
+   font-size: 28px;
+   color: black; 
+   margin-top: 30PX;
+   margin-bottom: 0;
+  
+}
+h2 {
+    font-size: 16px; 
+    color: black;
+    margin-top: 80px;
+    
+   
+ }
+
+p {
+  margin-top: 17px;
+  margin-bottom: 20px;
+}    
+.obrazek img {
+    max-width: 100%;
+    text-align: center;
+  
+}
+.kontejner p {
+    padding: 15px;
+}
+.buttony {
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110px;
+    justify-content: space-between;
+    
+    
+    
+}
+.button {
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 20px;
+    height: 40px;
+    
+    
+}
+.dobrodruzstvi {
+    background-color: #407BFF;
+    width: 195px;
+    padding-top: 11px;
+    
+}
+.pohoda {
+    background-color: #8B8B8B;
+    width: 220px;
+    padding-top: 11px;
+}
+
+.kontejner {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.sluzba {
+    background-color: white;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    border-radius: 10px;
+    margin: 20px 15px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.ikona {
+    float: left;
+    padding-left: 20px;
+    padding-top: calc(100%/25);
+    
+
+
+}
+@media screen and (min-width: 640px) {
+    
+    .kontejner {
+        flex-direction: row; 
+        
+    }
+    .ikona {
+        float: none;
+        padding: unset;
+    }
+    .buttony {
+        flex-direction: row; 
+        justify-content: center;
+    }
+        
+    
+    .dobrodruzstvi {
+        flex-basis: 197px;
+        margin-right: 20px;
+    } 
+    .pohoda {
+        flex-basis: 220px;
+    } 
+  
+}
+
+@media screen and (min-width: 1100px) {
+   
+    .ikona {
+        float: none;
+        padding: unset;
+    }
+    .uvod, .stred, .konec {
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+        }
+    .uvodnitext, .jedna {
+        order: -1
+        }
+    h2 {
+        margin-top: 20px;
+    }    
+      
+        .obrazek {
+            max-width: 425px;
+        }
+        .uvodnifoto, .uvodnitext {
+            flex-basis: 490px;
+        }
+        .uvodnitext p, .nadpis {
+            text-align: left;
+        }
+        .strednitext, .konecnytext {
+            padding-top: 50px;
+            text-align: left;
+            flex-basis: 430px;
+        }
+        .kontejner {
+            width: 550px;
+        }
+        .sluzba {
+            flex-basis: calc((550 - 46) /3);
+        }
+        .buttony {
+            flex-direction: row; 
+            justify-content: start;
+        }
+        .dobrodruzstvi {
+            flex-basis: 197px;
+        } 
+        .pohoda {
+            flex-basis: 220px;
+        } 
+        .strednitext {
+            padding-left: 60px;
+        }
+        .konecnytext {
+            padding-right: 60px;
+        }
+        .sluzba p {
+            margin: 5px;
+        }
+}
