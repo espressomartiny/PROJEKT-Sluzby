@@ -15,7 +15,7 @@ body {
 h1 {
    font-size: 28px;
    color: black; 
-   margin-top: 30PX;
+   margin-top: 30px;
    margin-bottom: 0;
   
 }
@@ -31,9 +31,10 @@ p {
   margin-top: 17px;
   margin-bottom: 20px;
 }    
+
 .obrazek img {
     max-width: 100%;
-    text-align: center;
+    
   
 }
 .kontejner p {
@@ -75,15 +76,20 @@ p {
     display: flex;
     flex-direction: column;
     
+    
    
 }
 .sluzba {
     background-color: white;
     box-shadow: 0px 4px 6px #407BFF1F;
     border-radius: 10px;
-    margin: 20px 15px;
+    margin-bottom: 15px;
     position: relative;
     padding-top: 20px;
+    height: 100px;
+}
+.sluzba p {
+    margin: 0;
 }
 
 .ikona {
@@ -94,6 +100,9 @@ p {
 
 
 }
+
+
+
 @media screen and (min-width: 640px) {
     
     .kontejner {
@@ -117,6 +126,12 @@ p {
     .pohoda {
         flex-basis: 220px;
     } 
+
+    .sluzba {
+        height: auto;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
   
 }
 
@@ -131,6 +146,10 @@ p {
         flex-direction: row;
         justify-content: center
         }
+    .stred {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .uvodnitext, .jedna {
         order: -1
         }
@@ -148,15 +167,17 @@ p {
             text-align: left;
         }
         .strednitext, .konecnytext {
-            padding-top: 50px;
+            padding-top: 20px;
             text-align: left;
             flex-basis: 430px;
         }
         .kontejner {
-            width: 550px;
+            width: 570px;
         }
         .sluzba {
-            flex-basis: calc((550 - 46) /3);
+            flex-basis: 170px;
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
         .buttony {
             flex-direction: row; 
@@ -176,5 +197,7 @@ p {
         }
         .sluzba p {
             margin: 5px;
+            padding: 5px;
         }
+       
 }
